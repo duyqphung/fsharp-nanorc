@@ -1,0 +1,25 @@
+syntax "fsharp" "\.fs$" "\.fsi$" "\.fsx$"
+
+comment "//"
+comment "(*" "*)"
+
+# Keywords
+color brightcyan "\<let\>|\<in\>|\<do\>|\<done\>|\<function\>|\<fun\>|\<match\>|\<with\>|\<if\>|\<then\>|\<else\>|\<elif\>|\<for\>|\<to\>|\<while\>|\<mutable\>|\<rec\>|\<and\>|\<begin\>|\<end\>|\<open\>|\<namespace\>|\<module\>|\<type\>|\<val\>|\<new\>|\<null\>|\<true\>|\<false\>|\<try\>|\<finally\>|\<catch\>|\<use\>|\<yield\>|\<return\>|\<downto\>|\<match!>|\<assert\>|\<base\>|\<global\>|\<lazy\>|\<inherit\>|\<abstract\>|\<override\>|\<default\>|\<extern\>|\<as\>|\<of\>|\<when\>|\<static\>|\<member\>|\<inline\>|\<interface\>|\<constructor\>|\<sealed\>|\<do!\>|\<use!\>|\<return!\>|\<upcast\>|\<downcast\>|\<fixed\>|\<checked\>|\<unchecked\>|\<failwith\>|\<not\>|\<or\>|\<and\>|\<xor\>|\<mod\>|\<land\>|\<lor\>|\<lxor\>|\<lsl\>|\<lsr\>|\<asr\>|\<null\>|\<sizeof\>|\<typeof\>|\<nameof\>|\<exception\>|\<raise\>"
+
+# Strings
+color brightyellow ""(\\.|[^"])*""
+
+# Numbers
+color brightblue "-?[0-9]+(\.[0-9]+)?([eE][+-]?[0-9]+)?"
+
+# Boolean Operators
+color cyan "\btrue\b|\bfalse\b"
+
+# Operators
+color brightred "[-+*/%=<>!&|^~]+"
+
+# Comments
+color yellow "//.*"
+color yellow start="(*" end="*)"
+
+
